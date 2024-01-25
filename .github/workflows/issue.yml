@@ -4,5 +4,5 @@ jobs:
   get-information-enviroment:
     runs-on: ubuntu-latest
     steps:
-      - name: Print greeting
-        run: echo {{ github.event }}
+      - name: Print github event
+        run: echo ${{ github.event }}
