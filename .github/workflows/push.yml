@@ -1,6 +1,3 @@
-# wf 1 - Run when have a new push
-#        create 3 jobs with depends jobs after lint -> test -> build
-
 name: Workflow Push
 on: workflow_dispatch
 jobs:
