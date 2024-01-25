@@ -1,0 +1,15 @@
+# wf 1 - Run when have a new push
+#        create 3 jobs with depends jobs after lint -> test -> build
+
+name: Workflow Push
+on: [workflow_dispatch]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Npm install
+        run: npm install
+      - name: Run linter
+        run: npm run lint
