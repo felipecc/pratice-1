@@ -2,7 +2,7 @@
 #        create 3 jobs with depends jobs after lint -> test -> build
 
 name: Workflow Push
-on: [workflow_dispatch]
+on: workflow_dispatch
 jobs:
   lint:
     runs-on: ubuntu-latest
